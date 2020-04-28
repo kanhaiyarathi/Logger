@@ -6,22 +6,10 @@ Class ALogger{
    protected int level;
    String path; 
 
-   public ALogger(String path){
-   		this.path = path;
-   }
-
    public void logMessage(string msg, int level){
    		if(this.level==level){
    			logWriter(msg);
    		}
-   }
-
-   public String getPath(){
-   		return this.path;
-   }
-
-   public String setPath(String path){
-   		this.path = path;
    }
 
    public abstract logWriter(String msg);
